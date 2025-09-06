@@ -246,8 +246,11 @@
 
     async function loadDumps() {
       const snapshot = await db.collection("dumps").get();
+      console.log('Loading dumps...');
+      console.log('Snapshot:', snapshot);
       snapshot.forEach((doc) => {
         const data = doc.data();
+        console.log('Doc data:', data);
         const marker = new google.maps.Marker({
           position: { lat: data.lat, lng: data.lng },
           map,
