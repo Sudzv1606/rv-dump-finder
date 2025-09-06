@@ -12,7 +12,7 @@
   <!-- Custom Styles -->
   <style>
     body { padding-top: 4rem; background: #f8f9fa; }
-    .navbar-brand { font-weight: 700; color: #2c7be5 !important; }
+    .navbar-brand { font-weight: 700; }
     #map { height: 70vh; width: 100%; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
     .submit-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
     .ad-container { margin: 1.5rem 0; text-align: center; }
@@ -20,7 +20,7 @@
     .badge-open { background: #28a745; color: white; }
     .badge-closed { background: #dc3545; color: white; }
     footer { background: #2c7be5; color: white; padding: 1.5rem 0; margin-top: 3rem; }
-    .hero { background: linear-gradient(135deg, #2c7be5 0%, #0056b3 100%); color: white; padding: 3rem 0; text-align: center; border-radius: 0 0 20px 20px; margin: -4rem -1rem 3rem -1rem; }
+    .hero { background: linear-gradient(135deg, #2c7be5 0%, #0056b3 100%); color: white; padding: 3rem 0; text-align: center; border-radius: 0 0 20px 20px; margin: 0 -1rem 3rem -1rem; }
   </style>
 </head>
 
@@ -29,7 +29,10 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">RV Dump Finder 🗺️</a>
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="logo.png" alt="RV Dump Finder Logo" class="me-2" style="height: 40px;">
+        RV Dump Finder 🗺️
+      </a>
       <div class="ms-auto">
         <a href="privacy.html" class="text-white text-decoration-none me-3">Privacy</a>
         <a href="contact.html" class="text-white text-decoration-none">Contact</a>
@@ -293,6 +296,3 @@
 
 </body>
 </html>
-
-
-
