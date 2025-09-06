@@ -248,9 +248,8 @@
       const snapshot = await db.collection("dumps").get();
       snapshot.forEach((doc) => {
         const data = doc.data();
-        // TEMP: For MVP, use geocoding later. For now, just show pins at default center.
         const marker = new google.maps.Marker({
-          position: { lat: 37.7749, lng: -122.4194 },
+          position: { lat: data.lat, lng: data.lng },
           map,
           title: data.address,
           icon: data.status === "open"
